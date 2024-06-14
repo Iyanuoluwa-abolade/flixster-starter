@@ -1,0 +1,10 @@
+.load-box {
+  display: flex;
+  justify-content: center;
+
+}
+
+.load-box button {
+  background-color: wheat;
+
+}
