@@ -12,14 +12,13 @@
 
   }
 
-
 .modal-content {
     background-color: black;
     border-radius: 8px;
     padding: 20px;
     max-width: 35%;
     max-height: 90%;
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds modal height */
+    overflow-y: auto;
     position: relative;
     justify-items: center;
     justify-content: center;
@@ -38,17 +37,14 @@
   }
 
 
-  /* Movie title */
 .modal-content h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
 
-
 .modal-content p {
     margin-bottom: 10px;
   }
-
 
 .modal-content img {
     max-width: 50%;

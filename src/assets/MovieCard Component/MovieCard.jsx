@@ -24,7 +24,6 @@ function MovieCard(props) {
     props.handleWatched(props.movie);
 
   }
-
   return (
     <div className="movie-card" onClick={handleClick}>
       <img src={'https://image.tmdb.org/t/p/w500' + props.img} alt="movie-img"/>

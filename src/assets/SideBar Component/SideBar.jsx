@@ -13,6 +13,7 @@ function SideBar(props) {
             <h3>Favorites</h3>
             {
                 favorites.map((item, index) => {
+
                     return (
                         <div key={index}>
 

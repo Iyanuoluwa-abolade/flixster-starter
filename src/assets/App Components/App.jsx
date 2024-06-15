@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import SearchBox from './SearchBox'
-import SortBox from './SortBox'
-import LoadBox from './LoadBox'
-import Header from './Header'
-import MovieList from './MovieList'
-import NowPlaying from './NowPlaying'
-import MovieModal from './MovieModal'
-import SideBar from './SideBar'
-// import FilterBy from './FilterBy'
+import SearchBox from '../SearchBox Component/SearchBox'
+import SortBox from '../SortBox Component/SortBox'
+import LoadBox from '../LoadMore Component/LoadBox'
+import Header from '../Header Component/Header'
+import MovieList from '../MovieList Component/MovieList'
+import NowPlaying from '../NowPlaying Component/NowPlaying'
+import MovieModal from '../MovieModal Component/MovieModal'
+import SideBar from '../SideBar Component/SideBar'
+
 
 
 
@@ -115,17 +115,13 @@ const App = () => {
 
       <div className="styles">
         <SearchBox handleSearch={handleSearch} searchQuery={searchQuery} />
-
-        {/* // setSearchQuery={setSearchQuery}  */}
         <NowPlaying handleNowPlaying={handleNowPlaying} />
         <SortBox handleOnChange={sortChange} />
-        {/* <FilterBy/> */}
+
       </div>
 
       <div style={{ display: "flex", flexDirection: "row"}}>
         <SideBar favorites={favorites} watched={watched}/>
-
-
         <MovieList movies={movies} handleMovieSelect={handleMovieSelect} handleWatched={handleWatched} handleFavorite={handleFavorite}/>
 
       </div>

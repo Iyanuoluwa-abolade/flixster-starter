@@ -1,0 +1,19 @@
+body {
+  background: black;
+  color: coral;
+  flex: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.styles {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.footer {
+  float: right;
+}

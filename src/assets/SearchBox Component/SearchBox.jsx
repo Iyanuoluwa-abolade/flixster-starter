@@ -2,7 +2,6 @@ import './SearchBox.css'
 
 
 function SearchBox({handleSearch, searchQuery}) {
-    // const [searchQuery, setSearchQuery] = useState('');
 
 
     const handleSearchEvent = (event) => {
@@ -20,7 +19,6 @@ function SearchBox({handleSearch, searchQuery}) {
              onChange={(event) => handleSearch(event.target.value)}
              placeholder='search movies'>
              </input>
-            {/* <button onClick={handleSearchEvent}>Search</button> */}
         </div>
     )
 }

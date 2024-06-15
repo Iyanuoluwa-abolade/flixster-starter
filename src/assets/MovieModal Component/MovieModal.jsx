@@ -69,7 +69,6 @@ function mapGenres(genres) {
         <h2>{movie.title}</h2>
         <p>Genres: {mapGenres(movie.genre_ids)} </p>
         <p>Release Date: {movie.release_date}</p>
-        {/* <p>Genres: {movie.genres.map(genre => genre.name).join(', ')}</p> */}
         <p>Overview: {movie.overview}</p>
 
         <iframe
