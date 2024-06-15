@@ -87,10 +87,12 @@ const App = () => {
   }
 
   const handleFavorite = (movie) => {
+    console.log('favorite', movie);
     setFavorites(prevFavorites => [...prevFavorites, movie]);
   };
 
   const handleWatched = (movie) => {
+    console.log('watched', movie);
     setWatched(prevWatched => [...prevWatched, movie]);
   };
 
@@ -114,7 +116,7 @@ const App = () => {
       <div style={{ display: "flex", flexDirection: "row"}}>
         <SideBar favorites={favorites} watched={watched}/>
 
-        <MovieList movies={movies} handleMovieSelect={handleMovieSelect} />
+        <MovieList movies={movies} handleMovieSelect={handleMovieSelect} handleWatched={handleWatched} handleFavorite={handleFavorite}/>
 
       </div>
 

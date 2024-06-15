@@ -15,11 +15,14 @@ function MovieCard(props) {
   function handleFavoriteClick(e){
     e.stopPropagation()
     setIsFavorite(!isFavorite);
+    props.handleFavorite(props.movie)
   }
 
   function handleWatchedClick(e){
     e.stopPropagation()
     setIsWatched(!isWatched);
+    props.handleWatched(props.movie);
+
   }
 
   return (

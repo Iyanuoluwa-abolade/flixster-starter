@@ -22,6 +22,8 @@ function MovieList(props) {
         title={movie.original_title}
         rating={movie.vote_average}
         handleMovieSelect={props.handleMovieSelect}
+        handleWatched={props.handleWatched}
+        handleFavorite={props.handleFavorite}
         // onClick={() => openModal(movie)}
       />
     );
