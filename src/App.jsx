@@ -8,7 +8,7 @@ import MovieList from './MovieList'
 import NowPlaying from './NowPlaying'
 import MovieModal from './MovieModal'
 import SideBar from './SideBar'
-import FilterBy from './FilterBy'
+// import FilterBy from './FilterBy'
 
 
 
@@ -87,13 +87,22 @@ const App = () => {
   }
 
   const handleFavorite = (movie) => {
+    if (favorites.includes(movie)) {
+      setFavorites(prevFavs => prevFavs.filter((f) => f !== movie));
+    } else {
+      setFavorites(prevFavorites => [...prevFavorites, movie])
+    }
     console.log('favorite', movie);
-    setFavorites(prevFavorites => [...prevFavorites, movie]);
+
   };
 
   const handleWatched = (movie) => {
+    if (watched.includes(movie)) {
+      setWatched(prevFavs => prevFavs.filter((f) => f !== movie));
+    } else {
+      setWatched(prevWatched => [...prevWatched, movie]);
     console.log('watched', movie);
-    setWatched(prevWatched => [...prevWatched, movie]);
+    }
   };
 
   useEffect(() => {
@@ -110,11 +119,12 @@ const App = () => {
         {/* // setSearchQuery={setSearchQuery}  */}
         <NowPlaying handleNowPlaying={handleNowPlaying} />
         <SortBox handleOnChange={sortChange} />
-        <FilterBy/>
+        {/* <FilterBy/> */}
       </div>
 
       <div style={{ display: "flex", flexDirection: "row"}}>
         <SideBar favorites={favorites} watched={watched}/>
+
 
         <MovieList movies={movies} handleMovieSelect={handleMovieSelect} handleWatched={handleWatched} handleFavorite={handleFavorite}/>
 
@@ -135,6 +145,6 @@ const App = () => {
 
   );
 
-
 }
+
 export default App;

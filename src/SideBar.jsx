@@ -14,7 +14,14 @@ function SideBar(props) {
             {
                 favorites.map((item, index) => {
                     return (
-                        <p>{item.original_title}</p>
+                        <div key={index}>
+
+                            <p>{item.original_title}</p>
+
+                            <img src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} alt="movie-img" width = '200'/>
+
+                        </div>
+
                     );
                 })
             }
@@ -23,7 +30,10 @@ function SideBar(props) {
             {
                 watched.map((item, index) => {
                     return (
-                        <p>{item.original_title}</p>
+                        <div key={index}>
+                            <p>{item.original_title}</p>
+                            <img src={'https://image.tmdb.org/t/p/w500/' + item.poster_path} alt="movie-img" width = '200'/>
+                        </div>
                     );
                 })
             }
