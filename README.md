@@ -48,14 +48,14 @@ Deployed Application (optional): [Flixster Deployed Site](https://flixster-start
 `TODO://` Add the embedded URL code to your animated app walkthrough below
 
 <div>
-    <a href="https://www.loom.com/share/93b6394c55f24dee9ad2fc579c236e7d">
-      <p>Showcase of My Movie Website 🎬 - Watch Video</p>
+    <a href="https://www.loom.com/share/d6d0745777ee4f6a9a753ed76a5a6e60">
+      <p>Library | Loom - 24 June 2024 - Watch Video</p>
     </a>
-    <a href="https://www.loom.com/share/93b6394c55f24dee9ad2fc579c236e7d">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/93b6394c55f24dee9ad2fc579c236e7d-with-play.gif">
+    <a href="https://www.loom.com/share/d6d0745777ee4f6a9a753ed76a5a6e60">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/d6d0745777ee4f6a9a753ed76a5a6e60-with-play.gif">
     </a>
   </div>
-
+  
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
